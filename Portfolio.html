@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfólio - Marcos Willian</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #050505;
+      color: white;
+      line-height: 1.6;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    section {
+      padding: 80px 0;
+      border-bottom: 1px solid #1f1f1f;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      color: #c7c7c7;
+      font-size: 18px;
+    }
+
+    .purple {
+      color: #a855f7;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 60px;
+      flex-wrap: wrap;
+    }
+
+    .hero-text {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .hero-photo {
+      width: 300px;
+      height: 300px;
+      border-radius: 30px;
+      background: #111;
+      border: 1px solid #222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 14px 24px;
+      border-radius: 16px;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .btn-primary {
+      background: #a855f7;
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: #9333ea;
+    }
+
+    .btn-secondary {
+      border: 1px solid #333;
+      color: white;
+    }
+
+    .btn-secondary:hover {
+      border-color: #a855f7;
+    }
+
+    .skills-grid,
+    .projects-grid {
+      display: grid;
+      gap: 20px;
+    }
+
+    .skills-grid {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .projects-grid {
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    .card {
+      background: #101010;
+      border: 1px solid #222;
+      border-radius: 24px;
+      padding: 25px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #a855f7;
+    }
+
+    .tags {
+      margin-top: 20px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      border: 1px solid #333;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      color: #d4d4d4;
+    }
+
+    footer {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    footer p {
+      color: #777;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 42px;
+      }
+
+      h2 {
+        font-size: 30px;
+      }
+
+      .hero {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section>
+    <div class="container hero">
+
+      <div class="hero-text">
+        <p class="purple" style="letter-spacing: 4px; text-transform: uppercase; margin-bottom: 20px;">
+          Portfólio Pessoal
+        </p>
+
+        <h1>
+          Marcos Willian <br>
+          <span class="purple">Sistemas de Informação</span>
+        </h1>
+
+        <p>
+          Estudante de Sistemas de Informação com interesse em suporte técnico,
+          redes e desenvolvimento web. Também desenvolvo projetos criativos
+          através do projeto artístico “marcoalla”.
+        </p>
+
+        <div class="buttons">
+          <a class="btn btn-primary" target="_blank"
+            href="https://www.linkedin.com/in/marcos-willian-5b9869402">
+            LinkedIn
+          </a>
+
+          <a class="btn btn-secondary" target="_blank"
+href="https://wa.me/5561995084951">
+  WhatsApp
+</a>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-photo">
+  <img src="foto.png" alt="Marcos Willian">
+</div>
+
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Sobre mim</h2>
+
+      <p>
+        Atualmente curso Sistemas de Informação na UniProjeção e estou em busca
+        da minha primeira oportunidade de estágio na área de Tecnologia da Informação.
+        Possuo conhecimentos em Windows, redes de computadores, HTML/CSS,
+        Pacote Office e criação de sites básicos.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Habilidades</h2>
+
+      <div class="skills-grid">
+        <div class="card">Tecnologia da Informação</div>
+        <div class="card">Redes de Computadores</div>
+        <div class="card">Suporte Técnico</div>
+        <div class="card">HTML</div>
+        <div class="card">CSS</div>
+        <div class="card">Windows</div>
+        <div class="card">Pacote Office</div>
+        <div class="card">Desenvolvimento Web</div>
+        <div class="card">Comunicação</div>
+        <div class="card">Trabalho em Equipe</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Projetos</h2>
+
+      <div class="projects-grid">
+
+        <div class="card">
+          <h3 class="purple">marcoalla</h3>
+
+          <p>
+            Projeto artístico e digital envolvendo identidade visual,
+            gerenciamento de redes sociais, criação de conteúdo e
+            desenvolvimento de presença online.
+          </p>
+
+          <div class="tags">
+            <div class="tag">Branding</div>
+            <div class="tag">Design</div>
+            <div class="tag">Web</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3 class="purple">Desenvolvimento Web</h3>
+
+          <p>
+            Criação de páginas e sites básicos utilizando HTML e CSS,
+            buscando desenvolver conhecimentos em desenvolvimento web
+            e interfaces modernas.
+          </p>
+
+          <div class="tags">
+            <div class="tag">HTML</div>
+            <div class="tag">CSS</div>
+            <div class="tag">Front-End</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Experiência</h2>
+
+      <div class="card">
+        <h3 class="purple">Alpinista Industrial</h3>
+
+        <p style="margin-bottom: 20px;">
+          Revitalização de fachadas prediais
+        </p>
+
+        <p>
+          Atuação em trabalhos técnicos em altura, seguindo normas de
+          segurança e colaborando em equipe para execução de serviços
+          operacionais e manutenção predial.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <h3>Marcos Willian</h3>
+
+      <p>
+        Estudante de Sistemas de Informação
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
